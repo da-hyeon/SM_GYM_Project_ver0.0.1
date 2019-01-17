@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hdh.smgproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/fossil_logo"
+        android:label="FOSSIL GYM"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".Activity.Splashscreen"
+            android:label="FOSSIL GYM">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity
+            android:name=".Activity.for_User.UserMainActivity"
+            android:label="FOSSIL GYM"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activity.for_Pop.Pop"
+            android:theme="@style/AppTheme.Pop"></activity>
+        <activity android:name=".Activity.for_Pop.PopTrainerInfo"
+            android:theme="@style/AppTheme.Pop"></activity>
+        <activity android:name=".Activity.for_Pop.PopUserInfo"
+        android:theme="@style/AppTheme.Pop"></activity>
+        <activity android:name=".Activity.for_Pop.PopFeedBack"
+            android:theme="@style/AppTheme.Pop"></activity>
+        <activity android:name=".Activity.for_Pop.PopFeedBackOfUser"
+            android:theme="@style/AppTheme.Pop"></activity>
+        <activity android:name=".Activity.for_CEO.CEOMainActivity" />
+        <activity android:name=".Activity.for_Trainer.TRregisterActivity" />
+        <activity android:name=".Class.UserInfoChange" />
+        <activity
+            android:name=".Activity.for_Trainer.TrainerMainActivity"
+            android:label="FOSSIL GYM"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
